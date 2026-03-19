@@ -6,62 +6,79 @@
     <title>Exercise 8: Responsive Web Design</title>
     <!--Created by Emma Wang on March 18, 2026 -->
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <style>
       .container {
         display: grid;
-        grid-template-columns: 50% 50%;
-        gap: 5px;
+        grid-template-columns: 40% 60%;
         padding: 10px;
 
       }
 
       .left,
       .right {
-        background-color: grey;
-        padding: 20px;
+        background-color: linen;
+        padding: 25px;
         font-size: 20px;
         text-align: left;
-        float: left;
       }
 
 
       h1 {
-        font-family: "Oswald", sans-serif;
+        font-family: "Playfair Display", Georgia, serif;
         font-optical-sizing: auto;
-        font-weight: bold;
-        text-align: center;
         font-style: normal;
-        font-size: 26px;
+        font-size: 2em;
+        margin-bottom: 0.5em;
+        letter-spacing: 0.03em;
+        color: darkolivegreen;
       }
 
       h2 {
-        font-family: "Helvetica", Arial, sans-serif;
-        font-size: 22px;
+        font-family: "Roboto", Arial, sans-serif;
+        font-size: 1.4em;
+        margin-bottom: 0.4em;
         font-weight: bold;
+        color: darkolivegreen;
       }
 
       h3 {
-        font-family: "Helvetica", Arial, sans-serif;
-        font-size: 18px;
+        font-family: "Roboto", Arial, sans-serif;
+        font-size: 1.1em;
+        margin-top: 1em;
         font-weight: bold;
+        color: sienna;
+      }
+
+      h4 {
+        font-family: "Roboto", Arial, sans-serif;
+        font-size: 1.3em;
+        font-weight: bold;
+        margin-top: 2em;
+        color: darkolivegreen;
       }
 
       ul {
+        font-family: "Roboto", Arial, sans-serif;
         text-align: left;
+        font-size: 1em;
+        line-height: 1.4;
       }
 
       p {
+        line-height: 1.4;
+        font-family: "Roboto", Arial, sans-serif;
         padding-top: 0px;
-        padding-right: 30px;
+        padding-right: 0px;
         padding-bottom: 10px;
-        padding-left: 30px;
-        font-family: "Helvetica", Arial, sans-serif;
-        font-size: 16px;
+        padding-left: 0px;
+        font-size: 1em;
       }
 
       img {
-        width: 300px;
+        width: 100%;
         height: auto;
+        display: block;
       }
     </style>
 
@@ -69,8 +86,6 @@
   </head>
   <body>
     <!--This receipe is taken from https://cooking.nytimes.com/recipes/1012494-spinach-tofu-and-sesame-stir-fry -->
-
-
 
     <div class="container">
       <div class="left">
@@ -85,9 +100,9 @@
           Yield: 3 Servings
         </h3>
 
-        <h3>
+        <h4>
           Ingredients
-        </h3>
+        </h4>
         <ul>
           <li>1 tablespoon canola oil</li>
           <li>1 tablespoon canola oil</li>
@@ -101,24 +116,38 @@
           <li>1 teaspoon sesame oil</li>
         </ul>
       </div>
-      <div class="container">
-        <div class="right">
-          <img src="recipe-photo.jpg" alt="Spinach, Tofu and Sesame Stir-Fry
+      <div class="right">
+        <img src="recipe-photo.jpg" alt="Spinach, Tofu and Sesame Stir-Fry
 ">
-          <p>
-            Preparation
 
-            Step 1
-            Heat the canola oil over medium-high heat in a large nonstick skillet or wok, and add the tofu. Stir-fry until the tofu is lightly colored, three to five minutes, and add the garlic, ginger and chili flakes. Cook, stirring, until fragrant, about one minute, and add soy sauce to taste. Add the spinach and stir-fry until the spinach wilts, about one minute. Stir in the sesame seeds, and add more soy sauce to taste. Remove from the heat.
+        <h2>
+          Preparation
+        </h2>
+        <h3>
+          Step 1
+        </h3>
 
-            Step 2
-            Using tongs, transfer the spinach and tofu mixture to a serving bowl, leaving the liquid behind in the pan or wok. Drizzle with the sesame oil, and add more soy sauce as desired. Serve with rice or other grains, or noodles. You may also use it as a filling for whole wheat pita bread.
+        <p>
+          Heat the canola oil over medium-high heat in a large nonstick skillet or wok, and add the tofu. Stir-fry until the tofu is lightly colored, three to five minutes, and add the garlic, ginger and chili flakes. Cook, stirring, until fragrant, about one minute, and add soy sauce to taste. Add the spinach and stir-fry until the spinach wilts, about one minute. Stir in the sesame seeds, and add more soy sauce to taste. Remove from the heat.
+        </p>
 
-            Tip
-            Advance preparation: This is a last-minute preparation, but you can have your ingredients prepared well in advance.
-          </p>
-        </div>
+        <h3>
+          Step 2
+        </h3>
+
+        <p>
+          Using tongs, transfer the spinach and tofu mixture to a serving bowl, leaving the liquid behind in the pan or wok. Drizzle with the sesame oil, and add more soy sauce as desired. Serve with rice or other grains, or noodles. You may also use it as a filling for whole wheat pita bread.
+        </p>
+
+        <h3>
+          Tip
+        </h3>
+
+        <p>
+          Advance preparation: This is a last-minute preparation, but you can have your ingredients prepared well in advance.
+        </p>
       </div>
+    </div>
   </body>
 
 </html>
