@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Exercise 7: Typography</title>
     <!--Created by Emma Wang on March 18, 2026 -->
-    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <style>
       .container {
@@ -17,7 +17,6 @@
 
       .left,
       .right {
-        background-color: linen;
         padding: 25px;
         font-size: 20px;
         text-align: left;
@@ -80,13 +79,53 @@
         height: auto;
         display: block;
       }
+body {
+  background-image: url("background-grid.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+      .nav {
+  text-align: center;
+  padding: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #4C4E54;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+    display: inline-block;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #E48E99;
+}
+
+.nav a.active {
+  color: #E48E99;
+}
+.main {
+  width: 1200px;
+  margin: 0 auto;
+}
     </style>
 
 
   </head>
   <body>
     <!--This receipe is taken from https://cooking.nytimes.com/recipes/1012494-spinach-tofu-and-sesame-stir-fry -->
-
+<nav class="nav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="commission.html">Commission</a>
+  <a href="contact.html">Contact</a>
+</nav>
+      <div class="main">
     <div class="container">
       <div class="left">
 
@@ -117,8 +156,7 @@
         </ul>
       </div>
       <div class="right">
-        <img src="recipe-photo.jpg" alt="Spinach, Tofu and Sesame Stir-Fry
-">
+
 
         <h2>
           Preparation
