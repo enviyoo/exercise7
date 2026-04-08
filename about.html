@@ -36,45 +36,36 @@
         font-size: 20px;
         text-align: left;
       }
+      
+      .section {
+  padding: 80px 0;
+}
+
       .bottom-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  text-align: center;
-}
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        text-align: center;
+      }
 
-.center-heading {
-  margin-bottom: 40px;
-}
+      .center-heading {
+        margin-bottom: 40px;
+      }
 
-.image-row {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
+      .image-row {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+      }
 
-.item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
-.item img {
-  width: 200px;
-  height: auto;
-  transition: transform 0.2s ease;
-}
-
-.item img:hover {
-  transform: scale(1.05);
-}
-
-.item p {
-  margin-top: 10px;
-  width: 200px;
-}
 
 
       h1 {
@@ -119,7 +110,7 @@
         line-height: 1.5;
         font-family: "Open Sans", Arial, sans-serif;
         font-size: 1em;
-        margin: 15 0px;
+        margin: 15px 0px;
       }
 
       img {
@@ -132,6 +123,26 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+      }
+
+
+
+      
+      .item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+                transition: transform 0.2s ease;
+
+}
+
+      .item img:hover {
+        transform: scale(1.05);
+      }
+
+      .item p {
+        margin-top: 10px;
+        width: 200px;
       }
 
       .nav {
@@ -210,6 +221,9 @@
         left: 5%;
         width: 90%;
       }
+      .my-work {
+        color: #4C4E54;
+      }
     </style>
 
 
@@ -245,34 +259,34 @@
           </div>
         </div>
       </div>
-        <div class="section">
-    <div class="bottom-content">
+      <div class="section">
+        <div class="bottom-content">
 
-      <h2 class="center-heading">My Work</h2>
+          <h1 class="my-work">my work</h1>
 
-      <div class="image-row">
-        <div class="item">
-          <img src="img1.png" alt="">
-          <p>Caption 1</p>
+          <div class="image-row">
+            <div class="item">
+              <img src="tablet.png" alt="">
+              <p>Caption 1</p>
+            </div>
+
+            <div class="item">
+              <img src="laptop.png" alt="">
+              <p>Caption 2</p>
+            </div>
+
+            <div class="item">
+              <img src="software.png" alt="">
+              <p>Caption 3</p>
+            </div>
+          </div>
         </div>
-
-        <div class="item">
-          <img src="img2.png" alt="">
-          <p>Caption 2</p>
-        </div>
-
-        <div class="item">
-          <img src="img3.png" alt="">
-          <p>Caption 3</p>
-        </div>
-      </div>
-    </div>
-    <footer class="footer">
-      <p>
-        2026 © enviyu<br>
-        characters displayed on fanart work belong to their respective owners.
-      </p>
-    </footer>
+        <footer class="footer">
+          <p>
+            2026 © enviyu<br>
+            characters displayed on fanart work belong to their respective owners.
+          </p>
+        </footer>
   </body>
 
 </html>
