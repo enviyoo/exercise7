@@ -221,69 +221,108 @@
         color: #4C4E54;
         margin-bottom: 40px;
       }
+
+      /* gallery title */
+      .gallery-title {
+        color: #E48E99;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      /* featured images (top big ones) */
+      .featured {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 60px;
+      }
+
+      .featured img {
+        width: 80%;
+        max-width: 900px;
+        border-radius: 6px;
+      }
+
+      /* grid gallery (2x2 squares) */
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+        width: 80%;
+        margin: 0 auto 60px auto;
+      }
+
+      .gallery-grid img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+      }
+
+      /* bottom wide image */
+      .wide {
+        display: flex;
+        justify-content: center;
+      }
+
+      .wide img {
+        width: 80%;
+        height: 250px;
+        object-fit: cover;
+      }
+
+      /* hover effect (matches your style) */
+      .featured img:hover,
+      .gallery-grid img:hover,
+      .wide img:hover {
+        transform: translateY(-8px);
+      }
     </style>
 
 
   </head>
   <body>
-    <img src="stickers/sticker-heart.png" alt="Sticker of a pink heart shape" class="sticker1">
-    <img src="stickers/sticker-bunny.png" alt="Sticker of a bunny that has one pink ear and one blue ear" class="sticker2">
-    <!--This receipe is taken from https://cooking.nytimes.com/recipes/1012494-spinach-tofu-and-sesame-stir-fry -->
     <nav class="nav">
       <a href="index.html">home</a>
-      <a href="about.html" class="active">about</a>
-      <a href="gallery.html">gallery</a>
+      <a href="about.html">about</a>
+      <a href="gallery.html" class="active">gallery</a>
       <a href="commission.html">commission</a>
       <a href="contact.html">contact</a>
     </nav>
     <div class="main">
-      <div class="container">
-        <div class="left">
-          <h1>
-            <span class="textcolour1">my</span>
-            <span class="textcolour2">story</span>
-          </h1>
-
-          <p>
-            i’ve been drawing since i was 4. growing up, i watched a lot of cartoons, especially chinese 动画 (donghua) and japanese anime, and those sparkly big eyes and detailed designs basically sparked my love for anything cute!</p>
-          <p>i got my first drawing tablet at 11 and have mostly worked digitally since, even though i studied traditional art in a fine arts high school. now i’m studying interaction design in university!
-          </p>
-        </div>
-        <div class="right">
-          <div class="polaroid">
-            <img src="story-bg.png" class="frame">
-            <img src="story-gif.gif" alt="Short clip from the Pretty Cure" class="photo">
-          </div>
-        </div>
-      </div>
       <div class="section">
         <div class="bottom-content">
+        <!-- AI assisted using ChatGPT. Prompt: "How do I create a gallery in HTML/CSS?" -->
+          <h1 class="gallery-title">my artworks!</h1>
 
-          <h1 class="toolbox">my toolbox</h1>
-
-          <div class="image-row">
-            <div class="item">
-              <img src="tablet.png" alt="">
-              <h2>huion hs610</h2>
-            </div>
-
-            <div class="item">
-              <img src="laptop.png" alt="">
-              <h2>msi laptop</h2>
-            </div>
-
-            <div class="item">
-              <img src="software.png" alt="">
-              <h2>photoshop + clip studio</h2>
-            </div>
+          <!-- featured images -->
+          <div class="featured">
+            <img src="illustration1.png" alt="">
+            <img src="art2.jpg" alt="">
           </div>
+
+          <!-- gallery grid -->
+          <div class="gallery-grid">
+            <img src="art3.jpg" alt="">
+            <img src="art4.jpg" alt="">
+            <img src="art5.jpg" alt="">
+            <img src="art6.jpg" alt="">
+          </div>
+
+          <!-- wide image -->
+          <div class="wide">
+            <img src="art7.jpg" alt="">
+          </div>
+
         </div>
-        <footer class="footer">
-          <p>
-            2026 © enviyu<br>
-            characters displayed on fanart work belong to their respective owners.
-          </p>
-        </footer>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>
+        2026 © enviyu<br>
+        characters displayed on fanart work belong to their respective owners.
+      </p>
+    </footer>
   </body>
 
 </html>
