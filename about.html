@@ -81,10 +81,6 @@
         transition: transform 0.2s ease;
       }
 
-      img:hover {
-        transform: rotate(-2deg);
-      }
-
       body {
         background-image: url("background-grid.png");
         background-size: cover;
@@ -150,6 +146,27 @@
         left: 1360px;
         transform: rotate(10deg);
       }
+
+.polaroid {
+  position: relative;
+  width: 100%;
+   transition: transform 0.3s ease;
+}
+      .polaroid:hover {
+        transform: rotate(3deg);
+      }
+
+.frame {
+  width: 100%;
+  display: block;
+}
+
+.photo {
+  position: absolute;
+  top: 5%;  
+  left: 5%;
+  width: 90%;
+}
     </style>
 
 
@@ -182,7 +199,10 @@
           </p>
         </div>
         <div class="right">
- <img src="persona-chibi.png" alt="Chibi-style illustration of anime girl with white pigtails sitting on a drawing tablet" class="chibi">
+<div class="polaroid">
+  <img src="story-bg.png" class="frame">
+  <img src="story-gif.gif" class="photo">
+</div>
 
   
           </div>
