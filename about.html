@@ -11,13 +11,14 @@
       .main {
         width: 1200px;
         margin: 0 auto;
+        padding-bottom: 50px;
       }
 
       .container {
         display: grid;
         grid-template-columns: 50% 50%;
         padding: 10px;
-      gap: 60px;
+        gap: 60px;
       }
 
       .left {
@@ -35,6 +36,45 @@
         font-size: 20px;
         text-align: left;
       }
+      .bottom-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.center-heading {
+  margin-bottom: 40px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item img {
+  width: 200px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.item img:hover {
+  transform: scale(1.05);
+}
+
+.item p {
+  margin-top: 10px;
+  width: 200px;
+}
 
 
       h1 {
@@ -203,8 +243,27 @@
             <img src="story-bg.png" class="frame">
             <img src="story-gif.gif" alt="Short clip from the Pretty Cure" class="photo">
           </div>
+        </div>
+      </div>
+        <div class="section">
+    <div class="bottom-content">
 
+      <h2 class="center-heading">My Work</h2>
 
+      <div class="image-row">
+        <div class="item">
+          <img src="img1.png" alt="">
+          <p>Caption 1</p>
+        </div>
+
+        <div class="item">
+          <img src="img2.png" alt="">
+          <p>Caption 2</p>
+        </div>
+
+        <div class="item">
+          <img src="img3.png" alt="">
+          <p>Caption 3</p>
         </div>
       </div>
     </div>
