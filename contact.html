@@ -12,6 +12,14 @@
         width: 1200px;
         margin: 0 auto;
       }
+      
+      
+            .sticker-wrapper {
+        width: 1200px;
+        margin: 0 auto;
+        position: relative;
+      }
+
 
       .container {
         display: grid;
@@ -22,7 +30,7 @@
       }
 
       .left {
-        padding-left: 90px;
+        padding-left: 100px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -175,21 +183,21 @@
       .sticker1 {
         position: absolute;
         top: 240px;
-        left: 145px;
+        left: 0px;
         transform: rotate(-20deg);
       }
 
       .sticker2 {
         position: absolute;
         top: 250px;
-        left: 600px;
+        left: 455px;
         transform: rotate(10deg);
       }
 
       .sticker3 {
         position: absolute;
         top: 460px;
-        left: 640px;
+        left: 495px;
         transform: rotate(10deg);
       }
     </style>
@@ -197,9 +205,11 @@
 
   </head>
   <body>
+    <div class="sticker-wrapper">
     <img src="stickers/sticker-heart.png" alt="Sticker of a pink heart shape" width="110" height="110" class="sticker1">
     <img src="stickers/sticker-bunny.png" alt="Sticker of a bunny that has one pink ear and one blue ear" width="112" height="118" class="sticker2">
     <img src="stickers/sticker-sparkle.png" alt="Sticker of a sparkle shape" width="163" height="163" class="sticker3">
+    </div>
 
     <nav class="nav">
       <a href="index.html">home</a>
